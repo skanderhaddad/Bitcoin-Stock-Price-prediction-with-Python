@@ -5,6 +5,8 @@ this project aims to predict the price of some cryptocurrency (BTC - ETH - XRP -
 
 First of all, choose the cryptocurrency from the drop-down list ,next type the number of days to make a forecast.
 
+![Demo](https://user-images.githubusercontent.com/57315775/107568485-54d82180-6be7-11eb-906f-80f652ef4d8f.gif)
+
 # Tools used in this project: 
 flask for deployment.
 yfinance to download historical market data.
