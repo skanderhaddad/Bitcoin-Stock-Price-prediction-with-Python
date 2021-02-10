@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+    <meta charset="UTF-8">
+    <title>ML API</title>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+
+</head>
+
+<body>
+
+<div class="login">
+    <h1>Bitcoin stock price prediction with python</h1>
+
+    <form action="{{ url_for('prediction')}}" method="post">
+
+        <p>Chose the crypto monnaie to predict.</p>
+        <label for="crypto">Choose a crypto monnaie:</label>
+        <select name="crypto" id="crypto">
+            <option value="BTC-USD">BTC-USD</option>
+            <option value="ETH-USD">ETH-USD</option>
+            <option value="XRP-USD">XRP-USD</option>
+            <option value="LTC-USD">LTC-USD</option>
+            <option value="DOGE-USD">DOGE-USD</option>
+            <option value="XLM-USD">XLM-USD</option>
+            <option value="BCH-USD">BCH-USD</option>
+
+        </select>
+        <br><br>
+        <p>after how many days you want to predict the price ?</p>
+
+        <input type="text" name="Days number" placeholder="Days number " required="required"/>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+    <br>
+    <br>
+    <p>the price :</p>
+    <td>{{ prediction_text }}</td>
+    <br>
+    <br>
+    <img src={{ figure }} alt="Image Placeholder" height="500">
+</div>
