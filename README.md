@@ -3,6 +3,8 @@ Bitcoin &amp; Stock Price prediction with Python
 
 this project aims to predict the price of some crypto monnaie (BTC - ETH - XRP - LTC - DOGE - XLM - BCH)
 
+First of all you should choose the crupto monnaie from the drop-down list ,next put the number of days that you want have the prediction result.
+
 # Tools used in this project:
 flask for deployment.
 yfinance to download historical market data.
